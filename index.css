@@ -1,4 +1,73 @@
 html, body {
     margin: 0;
     padding: 0;
+    background-color: black;
+    color: white;
+    user-select: none;
 }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+    width: 320px;
+}
+
+/* for desktop */
+
+@media(min-width: 600px) {
+    .container {
+        margin: 0 auto;
+        max-width: 900px;
+        padding: 50px 100px;
+    }
+}
+
+img {
+    width: 150px;   
+    margin: 0 auto;     
+}
+
+h1 {
+    text-align: center;    
+    font-size: 25px;
+}
+
+textarea,
+input {
+    background-color: #444059;
+    font-size: 20px;
+}
+
+textarea,
+input, 
+button {
+    border-radius: 5px;
+    border: 0;
+}
+
+textarea {
+    resize: none;
+    min-height: 110px;
+}
+
+.input-area {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 10px 0;
+}
+input {
+    width: 100%;
+    text-align: center;
+    padding: 15px 20px;
+    border: 0;
+}
+
+button {
+    background-color: #28A9F1;
+    padding: 15px 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
