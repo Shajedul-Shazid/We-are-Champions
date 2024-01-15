@@ -11,23 +11,17 @@ html, body {
     flex-direction: column;
     margin: 50px auto;
     width: 320px;
-    /* margin: 0 auto;
-    max-width: 320px;
-    padding: 50px 30px; */
 }
 
 /* for desktop */
-
 @media only screen and (min-width: 600px) {
     .container {
-        /* margin: 0 auto;
-        max-width: 900px;
-        padding: 50px 100px; */
-
         display: flex;
         flex-direction: column;
         margin: 50px auto;
         width: 900px;
+        font-size: 30px;
+        color: white;
     }
 }
 
@@ -52,6 +46,8 @@ input,
 button {
     border-radius: 5px;
     border: 0;
+    color: white;
+    
 }
 
 textarea {
@@ -77,5 +73,6 @@ button {
     padding: 15px 20px;
     font-weight: bold;
     font-size: 20px;
+    cursor: pointer;
 }
 
