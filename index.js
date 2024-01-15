@@ -12,6 +12,7 @@ const endrosementInDB = ref(database, "endrosement")
 const publishBtn = document.getElementById("pubish-btn")
 const textareaEl = document.getElementById("textarea-el")
 const endorsementEl = document.getElementById("indorsement")
+const indrosementElDiv = document.getElementById("indrosement-div")
 
 publishBtn.addEventListener("click", function() {
     let textareavalue = textareaEl.value
@@ -19,13 +20,20 @@ publishBtn.addEventListener("click", function() {
     textareaEl.value = ""
 })
 
+
 onValue(endrosementInDB, function(snapshot) {
 
         let endrosementArray = Object.values(snapshot.val()) 
 
+        indrosementElDiv.innerHTML = ""
+
         for(let i = 0; i < endrosementArray.length; i++) {          
            let currentEndrosement = endrosementArray[i]
-            endorsementEl.innerHTML += `<li>${currentEndrosement}</li>`
+           indrosementElDiv.innerHTML +=
+           `
+             <p>${currentEndrosement}</p>
+           `
         }
 
 })
+

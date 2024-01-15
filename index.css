@@ -75,4 +75,13 @@ button {
     font-size: 20px;
     cursor: pointer;
 }
+ 
+h2 {
+    text-align: center;
+}
 
+p {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+}
